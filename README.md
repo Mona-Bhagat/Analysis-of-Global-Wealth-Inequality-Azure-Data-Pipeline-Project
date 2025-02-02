@@ -1,5 +1,9 @@
 # Analysis-of-Global-Wealth-Inequality-Azure-Data-Pipeline-Project
 
+![image](https://github.com/user-attachments/assets/2d864033-e434-4902-8e8b-56a6cba35fb6)   ![image](https://github.com/user-attachments/assets/0b0e0553-4821-4511-9db6-3854cb54129b)
+
+
+
 
 # Dataset Introduction - Two datasets have been used
 
@@ -7,7 +11,7 @@
 
 - The second dataset - contains data on % wealth held by the top 10% of wealth holders by country. This has been visualized separately in Tableau because of the availability of impactful Map viz (Source - https://wid.world/data/)
 
-# Data Engineering and Analysis perspective
+# Data Engineering and Analysis Perspective
 
 - This project addresses a critical business use case by building a comprehensive data pipeline on Azure, by migrating on-premises SQL Server data using Azure Data Factory, storing semi-structured data in an Azure Data Lake container, transforming it with Databricks (PySpark), saving the processed data back to a transformed ADLS Gen2 container, and integrating it with Power BI for visualization.  
 
@@ -19,12 +23,14 @@
 - **Azure Databricks (PySpark)** (Data Transformation)
 - **Power BI & Tableau** (Data Visualization)
 
+![Architecture daigram](https://github.com/user-attachments/assets/660b947e-9fe4-4a39-82cc-1f87ac0f1c7c)
+
 ---
 
 # Project Workflow
 
 ## 1. Data Ingestion & Storage Setup
-- Created a SQL Server database and uploaded the CSV dataset.
+- Created an SQL Server database and uploaded the CSV dataset.
 - Provisioned an Azure Storage Account with two containers:
   - **Raw Container**: For initial data storage.
   - **Transformed Container**: For processed data.
@@ -57,14 +63,12 @@
 # Additional Considerations & Enhancements
 - ✅ **Data Governance & Security**: Used Azure Key Vault for secure credential management.
 - ✅ **Scalability & Performance**: Optimized Databricks cluster configuration to enhance processing speed.
-- ✅ **Logging & Monitoring**: Integrated Azure Monitor for tracking data pipeline execution.
-- ✅ **CI/CD Pipeline (Future Scope)**: Automate deployment using Azure DevOps.
 
 ---
 
 # Analysis and Final Thoughts - 
 
-This project was primarily aimed at showcasing Data Engineering skills but the choice of dataset allows me to discuss some socio-economic issues or at the least help start a conversation. These are mostly from the 'Wealth Inequality Report 2022'. This is an excellent publication (with candid write-up) that should be run by every responsible citizen. Yes, it is 236 pages long but worth every minute of reading :)
+This project was primarily aimed at showcasing Data Engineering skills but the choice of dataset allows me to discuss some socio-economic issues or at the least help start a conversation. These are mostly from the 'Wealth Inequality Report 2022'. This is an excellent publication (with a candid write-up) that should be run by every responsible citizen. Yes, it is 236 pages long but worth every minute of reading :)
 
 - One of the common issues we face as a society is income/wealth inequality which is at levels seen back in the 1900s-1910s based on the Gini index of Global wealth inequality 1910 - 0.72, 2000 - 0.72, 2020 - 0.67 (World Inequality report, 2022). The economic power is increasingly being concentrated in the hands of very small minority of the super-rich. Wealth held by the Top 10% of wealth holders: Russia 74.1, US - 70.7%, France 67.8%,  India - 64%, UK - 57.1%. 
 
